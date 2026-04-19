@@ -30,7 +30,7 @@ import {
 } from "@/components/ui/accordion";
 
 // --- Constants ---
-const WHATSAPP_NUMBER = "6281234567890"; // Placeholder
+const WHATSAPP_NUMBER = "6281278382200"; // Placeholder
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20Cikarang%20Kanopi,%20saya%20ingin%20bertanya%20tentang%20layanan%20Anda.`;
 
 const SERVICES = [
