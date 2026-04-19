@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { 
-  Phone, 
-  MessageCircle, 
-  MapPin, 
-  Clock, 
-  CheckCircle2, 
-  Menu, 
-  X, 
+import {
+  Phone,
+  MessageCircle,
+  MapPin,
+  Clock,
+  CheckCircle2,
+  Menu,
+  X,
   ChevronRight,
   Shield,
   Hammer,
@@ -31,7 +31,7 @@ import {
 
 // --- Constants ---
 const WHATSAPP_NUMBER = "6281234567890"; // Placeholder
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20Tangerang%20Kanopi,%20saya%20ingin%20bertanya%20tentang%20layanan%20Anda.`;
+const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Halo%20Cikarang%20Kanopi,%20saya%20ingin%20bertanya%20tentang%20layanan%20Anda.`;
 
 const SERVICES = [
   {
@@ -120,16 +120,16 @@ const Navbar = () => {
             TK
           </div>
           <span className={`font-bold text-xl tracking-tight ${isScrolled ? "text-slate-900" : "text-white"}`}>
-            Tangerang Kanopi
+            Cikarang Kanopi
           </span>
         </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               className={`text-sm font-medium transition-colors hover:text-blue-600 ${isScrolled ? "text-slate-600" : "text-white/90"}`}
             >
               {link.name}
@@ -150,9 +150,9 @@ const Navbar = () => {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col gap-6 mt-10">
                 {navLinks.map((link) => (
-                  <a 
-                    key={link.name} 
-                    href={link.href} 
+                  <a
+                    key={link.name}
+                    href={link.href}
                     className="text-lg font-semibold text-slate-900 hover:text-blue-600 transition-colors"
                   >
                     {link.name}
@@ -176,9 +176,9 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://picsum.photos/seed/hero-canopy/1920/1080" 
-          alt="Hero Background" 
+        <img
+          src="https://picsum.photos/seed/hero-canopy/1920/1080"
+          alt="Hero Background"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
@@ -193,7 +193,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <Badge className="mb-4 bg-blue-600/20 text-blue-400 border-blue-500/30 px-3 py-1 text-sm">
-              #1 Spesialis Kanopi & Las Tangerang
+              #1 Spesialis Kanopi & Las Cikarang
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Wujudkan Hunian <span className="text-blue-500">Nyaman & Aman</span> Bersama Kami
@@ -212,7 +212,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
@@ -261,9 +261,9 @@ const Services = () => {
             >
               <Card className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow group">
                 <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
+                  <img
+                    src={service.image}
+                    alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                   />
@@ -296,7 +296,7 @@ const Portfolio = () => {
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Portofolio Proyek</h2>
             <p className="text-slate-600">
-              Beberapa hasil pengerjaan kami di berbagai wilayah Tangerang dan sekitarnya. Kualitas adalah prioritas utama kami.
+              Beberapa hasil pengerjaan kami di berbagai wilayah Cikarang dan sekitarnya. Kualitas adalah prioritas utama kami.
             </p>
           </div>
           <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
@@ -314,9 +314,9 @@ const Portfolio = () => {
               transition={{ delay: i * 0.1 }}
               className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer"
             >
-              <img 
-                src={img} 
-                alt={`Project ${i + 1}`} 
+              <img
+                src={img}
+                alt={`Project ${i + 1}`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
@@ -406,7 +406,7 @@ const FAQ = () => {
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-left font-semibold text-slate-900">Apakah biaya survei lokasi gratis?</AccordionTrigger>
             <AccordionContent className="text-slate-600">
-              Tentu! Kami memberikan layanan survei dan konsultasi gratis untuk wilayah Tangerang dan sekitarnya.
+              Tentu! Kami memberikan layanan survei dan konsultasi gratis untuk wilayah Cikarang dan sekitarnya.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -428,14 +428,14 @@ const Contact = () => {
         <div className="bg-blue-600 rounded-3xl p-8 md:p-16 text-white overflow-hidden relative">
           {/* Decorative Circles */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48"></div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Siap Memulai Proyek Anda?</h2>
               <p className="text-blue-100 text-lg mb-8">
                 Jangan ragu untuk berkonsultasi mengenai kebutuhan kanopi atau konstruksi besi Anda. Tim kami siap memberikan solusi terbaik dengan harga transparan.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
@@ -452,7 +452,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Alamat Workshop</p>
-                    <p className="font-bold text-xl">Jl. Raya Serpong No. 123, Tangerang</p>
+                    <p className="font-bold text-xl">Jl. Raya Serpong No. 123, Cikarang</p>
                   </div>
                 </div>
               </div>
@@ -507,17 +507,17 @@ const Footer = () => {
                 TK
               </div>
               <span className="font-bold text-xl text-white tracking-tight">
-                Tangerang Kanopi
+                Cikarang Kanopi
               </span>
             </div>
             <p className="max-w-md mb-6">
-              Bengkel las spesialis pembuatan kanopi, pagar, teralis, dan berbagai konstruksi besi berkualitas tinggi di wilayah Tangerang dan sekitarnya. Berpengalaman lebih dari 10 tahun.
+              Bengkel las spesialis pembuatan kanopi, pagar, teralis, dan berbagai konstruksi besi berkualitas tinggi di wilayah Cikarang dan sekitarnya. Berpengalaman lebih dari 10 tahun.
             </p>
             <div className="flex gap-4">
               {/* Social icons would go here */}
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-sm tracking-widest">Tautan Cepat</h4>
             <ul className="space-y-4 text-sm">
@@ -545,9 +545,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>© 2024 Tangerang Kanopi. All rights reserved.</p>
+          <p>© 2024 Cikarang Kanopi. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Kebijakan Privasi</a>
             <a href="#" className="hover:text-white transition-colors">Syarat & Ketentuan</a>
